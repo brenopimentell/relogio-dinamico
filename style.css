@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Orbitron&family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open sans' sans-serif;
+}
+
+body {
+    height: 100vh; /*100vh pra cobrir a altura da tela inteira*/
+    background: linear-gradient(120deg, rgb(31, 161, 241), rgb(159, 197, 23));
+    display: flex; /*para poder alinhar os ingredientes no centro*/
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.relogio {
+    display: flex; /*alinhou um do lado do outro*/
+    align-items: center;
+    justify-content: space-around; /* space around serve para dar um espaçamento entre eles*/
+    height: 200px;
+    width: 500px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgb(65, 60, 60);
+}
+
+.relogio div { /*CLASS relogio que pegará todas as DIVS, onde estarão os quadrados preto*/
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column; /*coloca os elementos um embaixo do outro (COLUMN - COLUNA)*/
+    align-items: center; /*alinhou*/
+    justify-content: center; /*centralizou*/
+    color: rgb(148, 212, 231);
+    background: black;
+    border-radius: 7px;
+    box-shadow: 5px 5px 15px rgb(215, 236, 95);
+    letter-spacing: 3px; /*espacei as letras*/
+}
+
+.relogio span { /*CLASS relogio que pegará todos os SPAN*/
+    font-weight: bolder; /*engrossou a fonte*/
+    font-size: 60px;
+}
+
+.relogio span.tempo { /*CLASS relogio e todos os SPAN com TEMPO (nesse caso olhando no index serão as hrs, min e seg*/
+    font-size: 10px;
+}
